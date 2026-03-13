@@ -1,0 +1,55 @@
+body { font-family: Arial, sans-serif; background:#f7f7f7; color:#222; margin:0; padding:20px; }
+.wrapper { max-width:1000px; margin:0 auto; text-align:center; }
+.forms { display:flex; gap:20px; justify-content:center; flex-wrap:wrap; margin-top:20px; }
+.card { background:#fff; padding:20px; border-radius:12px; box-shadow:0 4px 12px rgba(0,0,0,0.06); width:320px; }
+.card input { width:100%; padding:10px; margin:8px 0; border-radius:6px; border:1px solid #ddd; }
+.card button { padding:10px 18px; border:none; border-radius:8px; background:#e63946; color:#fff; cursor:pointer; }
+.top { display:flex; justify-content:space-between; align-items:center; max-width:1000px; margin:0 auto 20px; }
+.menu-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:16px; max-width:1000px; margin:0 auto; }
+.menu-item { padding:16px; text-align:center; }
+
+.hover-underline:hover {
+  text-decoration: underline !important;
+  color: #f1faee !important;
+}
+
+.card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.6);
+}
+
+::placeholder {
+  color: #aaa !important;   /* lighter gray so it's visible */
+  opacity: 1 !important;    /* full opacity */
+}
+
+.login{
+
+      border-radius: 10px;
+      display: flex;                /* use flexbox */
+      justify-content: center;      /* horizontal center */
+      align-items: center;          /* vertical center */
+      margin-top: 27px;
+      margin-bottom: auto;
+}
+
+form {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      width: 80%;
+    }
+
+input {
+  padding: 8px;
+}
+
+.head{
+  margin-top: auto;
+  text-align: center;
+  font-size: 50px;
+}

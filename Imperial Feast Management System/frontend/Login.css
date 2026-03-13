@@ -1,0 +1,81 @@
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #000;
+  font-family: 'Poppins', sans-serif;
+  color: white;
+}
+
+.login-box, #registerBox {
+  background: rgba(0, 0, 0, 0.6);
+  padding: 30px 40px;
+  margin: 10px;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(255, 255, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  text-align: center;
+  width: 520px;
+  height: 300px;
+}
+
+#registerBox {
+  display: none;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+}
+
+.btn {
+  background: gold;
+  border: none;
+  color: black;
+  padding: 10px;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: orange;
+}
+
+.link-btn {
+  background: none;
+  border: none;
+  color: gold;
+  cursor: pointer;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+#lottieContainer {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: gold;
+}
+
+form{
+    gap: 15px;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  margin-bottom: 22px; /* adds space between inputs */
+}

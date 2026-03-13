@@ -1,0 +1,146 @@
+body {
+  background: #000 !important;
+}
+
+.menu-card {
+  background: #111;
+  border: 1px solid #FFD700;
+  border-radius: 12px;
+  min-height: 230px;           /* Ensures same height */
+  transition: 0.3s;
+}
+
+.menu-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 15px rgba(255, 215, 0, 0.4);
+}
+
+.veg-mark {
+  width: 14px;
+  height: 14px;
+  border: 2px solid green;
+  background: green;
+  display: inline-block;
+  border-radius: 3px;
+  margin-right: 6px;
+}
+
+.nonveg-mark {
+  width: 14px;
+  height: 14px;
+  border: 2px solid red;
+  background: red;
+  display: inline-block;
+  border-radius: 3px;
+  margin-right: 6px;
+}
+
+.add-btn {
+  border: 1px solid #FFD700;
+  background: transparent;
+  color: #FFD700;
+  padding: 6px 12px;
+  border-radius: 6px;
+  transition: 0.25s;
+}
+
+.add-btn:hover {
+  background: #FFD700;
+  color: black;
+}
+
+#cartPanel {
+  position: fixed;
+  top: 0;
+  right: -400px;
+  width: 350px;
+  height: 100vh;
+  background: #111;
+  border-left: 2px solid #FFD700;
+  padding: 15px;
+  transition: 0.4s ease;
+  z-index: 9999;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+#cartPanel.open {
+  right: 0;
+}
+
+#cartHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #FFD700;
+  padding-bottom: 10px;
+}
+
+#cartHeader button {
+  background: none;
+  color: #FFD700;
+  border: none;
+  font-size: 26px;
+  cursor: pointer;
+}
+
+#cartItems {
+  flex: 1;
+  overflow-y: auto;
+  margin-top: 10px;
+}
+
+.cart-item {
+  border-bottom: 1px solid #333;
+  padding: 8px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+#cartFooter {
+  border-top: 1px solid #FFD700;
+  padding-top: 12px;
+}
+
+.checkout-btn {
+  width: 100%;
+  padding: 8px 0;
+  background: #FFD700;
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+  color: black;
+}
+
+.qty-btn {
+  background: none;
+  border: 1px solid #FFD700;
+  color: #FFD700;
+  padding: 3px 8px;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.qty-btn:hover {
+  background: #FFD700;
+  color: black;
+}
+
+
+.clear-btn {
+  width: 100%;
+  padding: 8px 0;
+  background: #ff4747;
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+  color: white;
+  transition: 0.3s;
+}
+
+.clear-btn:hover {
+  background: #d00000;
+}

@@ -1,0 +1,86 @@
+.carousel-img {
+  height: 50vh;  
+  width: 50vw;        /* full screen height (you can use 500px or whatever you like) */
+  background-size: cover;      /* crops the image nicely without stretching */
+}
+
+.Offers{
+    margin-top: 10px;
+    background-color: black;
+    color: #FFD700;
+}
+
+
+.bd{
+    background-color: black;
+}
+
+.xyz{
+  height: auto;
+  background-size: cover;
+}
+
+.offer_CreditCard{
+  padding-right: 100px;
+  margin: 8px;
+}
+
+.offer1{
+  border-color: #FFD700;
+ 
+  border: 1px solid;
+  
+}
+
+.Discounts{
+  margin-left: 8px;
+  /* box-shadow property removed or add a valid value below */
+  /* box-shadow: 0 2px 4px rgba(0,0,0,0.2); */
+  box-shadow: 0 2px 4px rgba(255, 255, 255, 0.2);
+}
+
+.Notice{
+  color:red;
+  margin-left: auto;
+}
+
+/* Carousel images responsive */
+.carousal-img {
+    height: 100vh;          /* full screen height for large devices */
+    object-fit: cover;
+}
+@media (max-width: 768px) {
+    .carousal-img {
+        height: 50vh;       /* reduce height on smaller screens */
+    }
+}
+
+/* Navbar fixes */
+.navbar-brand span {
+    font-size: 1.2rem;
+}
+@media (max-width: 576px) {
+    #userName {
+        display: none; /* hide name on very small screens if squished */
+    }
+}
+
+.offer_CreditCard {
+    background: #111;              /* dark background */
+    color: #fff;                   /* text color */
+    padding: 20px;
+    border-radius: 12px;
+    transition: all 0.3s ease;     /* smooth hover transition */
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    cursor: pointer;
+}
+
+.offer_CreditCard:hover {
+    transform: translateY(-8px) scale(1.02);   /* lift up + slight zoom */
+    box-shadow: 0 8px 20px rgba(0,0,0,0.4);   /* deeper shadow */
+    background: linear-gradient(135deg, #000, #222); /* glossy effect */
+}
+
+p{
+  text-align: justify;
+}
